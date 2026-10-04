@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Davis Heating and Air Conditioning | Crown Point's Tin Knockers Since 1959</title>
+<meta name="description" content="Family-owned HVAC in Crown Point, Indiana since 1959. Furnace and AC replacement, repair and maintenance, heat pumps, radiant heat, air balancing and service agreements.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --steel:#B8BCC0;
+    --gunmetal:#3A3F44;
+    --brass:#C9711B;
+    --brass-dark:#9E5512;
+    --ink:#2B2E31;
+    --paper:#F2EFE9;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;border-radius:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--steel);
+    color:var(--ink);
+    font-family:"Roboto Slab",Georgia,serif;
+    font-size:1.0625rem;
+    line-height:1.7;
+  }
+  h1,h2,.btn,.brand{
+    font-family:"Oswald","Arial Narrow",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    font-weight:700;
+    line-height:1.05;
+  }
+  a{color:inherit;text-decoration:none}
+  a.text-link:hover,a.text-link:focus{text-decoration:underline}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 1.25rem}
+
+  /* CTA */
+  .btn{
+    display:inline-block;
+    background:var(--brass);
+    color:var(--paper);
+    border:2px solid var(--brass);
+    padding:.85rem 1.4rem;
+    font-size:1.35rem;
+    font-weight:600;
+    letter-spacing:.08em;
+    transition:background-color .15s, border-color .15s;
+  }
+  .btn:hover,.btn:focus{background:var(--brass-dark);border-color:var(--brass-dark)}
+  .btn:focus-visible{outline:3px solid var(--paper);outline-offset:2px}
+  .btn small{display:block;font-size:.7rem;letter-spacing:.18em;font-weight:500;opacity:.95}
+
+  /* Top bar */
+  .topbar{background:var(--gunmetal);color:var(--paper);border-bottom:2px solid var(--brass)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.8rem;padding-bottom:.8rem}
+  .brand{font-size:1.25rem;letter-spacing:.08em;font-weight:600}
+  .brand span{display:block;font-size:.72rem;letter-spacing:.22em;font-weight:500;color:var(--steel)}
+  .topbar .btn{font-size:1.1rem;padding:.65rem 1rem}
+
+  /* Hero */
+  .hero{border-bottom:2px solid var(--brass)}
+  .hero .wrap{display:grid;gap:2rem;padding-top:2.5rem;padding-bottom:2.5rem}
+  .eyebrow{
+    display:inline-block;
+    background:var(--brass);color:var(--paper);
+    font-weight:700;font-size:.82rem;letter-spacing:.2em;
+    padding:.3rem .7rem;margin-bottom:1.1rem;
+  }
+  .hero h1{font-size:clamp(2.8rem,11vw,5.6rem);color:var(--ink);margin-bottom:1.1rem}
+  .hero p{max-width:34rem;font-size:1.15rem;margin-bottom:1.6rem}
+  .hero .fine{font-size:.95rem;margin-top:1rem;margin-bottom:0}
+
+  .photo-slot{
+    background:var(--gunmetal);
+    border:2px solid var(--brass);
+    overflow:hidden;
+  }
+  .photo-slot img{
+    display:block;width:100%;height:100%;
+    object-fit:cover;
+    color:var(--steel);
+    font-size:.85rem;
+  }
+  .hero .photo-slot{aspect-ratio:4/3}
+
+  /* Timeline */
+  .heritage{background:var(--gunmetal);color:var(--paper);padding:3.5rem 0;border-bottom:2px solid var(--brass)}
+  .heritage h2{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:.7rem}
+  .heritage .lede{max-width:46rem;margin-bottom:2.2rem;color:var(--paper)}
+  .strip{list-style:none;display:grid;gap:1.25rem}
+  .plate{
+    position:relative;
+    border:2px solid var(--brass);
+    padding:2rem 1.6rem 1.8rem;
+  }
+  .plate.dark{background:var(--gunmetal);color:var(--paper)}
+  .plate.light{background:var(--steel);color:var(--ink)}
+  .rivet{position:absolute;width:10px;height:10px;background:var(--brass);border-radius:50%}
+  .rivet.tl{top:9px;left:9px}.rivet.tr{top:9px;right:9px}
+  .rivet.bl{bottom:9px;left:9px}.rivet.br{bottom:9px;right:9px}
+  .plate .when{
+    font-family:"Oswald","Arial Narrow",sans-serif;
+    text-transform:uppercase;letter-spacing:.06em;font-weight:700;
+    font-size:2.4rem;line-height:1;display:block;margin-bottom:.6rem;
+  }
+  .plate h3{font-size:1.05rem;font-weight:700;margin-bottom:.4rem}
+  .plate p{font-size:1rem}
+
+  /* Services */
+  .services{padding:3.5rem 0;border-bottom:2px solid var(--brass)}
+  .services h2{font-size:clamp(2rem,6vw,3.2rem);margin-bottom:.7rem}
+  .services .lede{max-width:44rem;margin-bottom:2rem}
+  .grid{display:grid;gap:1.25rem}
+  .panel{border:2px solid var(--brass);background:var(--steel);display:flex;flex-direction:column}
+  .panel .photo-slot{border:0;border-bottom:2px solid var(--brass);aspect-ratio:16/10}
+  .panel-body{padding:1.2rem 1.25rem 1.4rem}
+  .panel h3{font-size:1.2rem;font-weight:700;margin-bottom:.3rem;color:var(--ink)}
+  .panel p{font-size:1rem}
+  .note{margin-top:1.75rem;border:2px solid var(--brass);padding:1.1rem 1.25rem;background:var(--gunmetal);color:var(--paper)}
+  .note strong{color:var(--paper)}
+
+  /* Rating */
+  .rating{background:var(--gunmetal);color:var(--paper);padding:3.5rem 0;text-align:center;border-bottom:2px solid var(--brass)}
+  .stars{display:flex;justify-content:center;gap:.5rem;margin-bottom:1.1rem}
+  .stars svg{width:34px;height:34px;fill:var(--brass)}
+  .rating h2{font-size:clamp(2.2rem,8vw,4.4rem);margin-bottom:.8rem}
+  .rating p{max-width:38rem;margin:0 auto 1.8rem}
+
+  /* Footer */
+  footer{background:var(--gunmetal);color:var(--paper);padding:3rem 0 2rem;border-top:2px solid var(--brass)}
+  .foot-grid{display:grid;gap:2rem;margin-bottom:2.5rem}
+  footer h2{font-size:1.5rem;margin-bottom:.6rem}
+  footer address{font-style:normal}
+  footer ul{list-style:none}
+  footer li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--brass);border-radius:50%;margin-right:.6rem;vertical-align:middle}
+  .fine-print{border-top:2px solid var(--brass);padding-top:1.25rem;font-size:.9rem;display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:space-between}
+
+  @media (min-width:640px){
+    .grid{grid-template-columns:1fr 1fr}
+    .foot-grid{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:860px){
+    .hero .wrap{grid-template-columns:1fr 1fr;align-items:center;padding-top:4rem;padding-bottom:4rem}
+    .strip{grid-template-columns:repeat(3,1fr);gap:0}
+    .strip .plate + .plate{border-left:0}
+  }
+  @media (max-width:420px){
+    .brand{font-size:1.05rem}
+    .brand span{display:none}
+    .topbar .btn{font-size:1rem;padding:.55rem .75rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Davis Heating &amp; Air<span>Crown Point, Indiana</span></a>
+    <a class="btn" href="tel:+12196628635" aria-label="Call Davis Heating and Air Conditioning at 219-662-8635">219-662-8635</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">FAMILY-OWNED SINCE 1959</span>
+        <h1 id="hero-title">Crown Point's Tin Knockers</h1>
+        <p>Three generations of the same Davis family keeping Crown Point homes and shops warm in winter and cool in summer, one honest service call at a time.</p>
+        <a class="btn" href="tel:+12196628635">Call 219-662-8635<small>Service calls &amp; free estimates</small></a>
+        <p class="fine">Residential homes and light commercial buildings across Lake County and Northwest Indiana.</p>
+      </div>
+      <figure class="photo-slot" data-photo-slot="hero">
+        <img data-photo-query="Davis family technician standing beside service van Crown Point Indiana" alt="Davis family technician standing beside service van Crown Point Indiana">
+      </figure>
+    </div>
+  </section>
+
+  <section class="heritage" aria-labelledby="heritage-title">
+    <div class="wrap">
+      <h2 id="heritage-title">Three Generations of Tin Knockers</h2>
+      <p class="lede">"Tin knocker" is what the trade calls the folks who cut, bend and hang sheet metal by hand. That's where this shop started, and it's still how we work: the same family name on the truck since 1959.</p>
+      <ol class="strip">
+        <li class="plate dark">
+          <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+          <span class="when">1959</span>
+          <h3>The shop opens</h3>
+          <p>Davis Heating and Air Conditioning gets its start in Crown Point, built on sheet-metal work and furnaces done right the first time.</p>
+        </li>
+        <li class="plate light">
+          <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+          <span class="when">2nd Generation</span>
+          <h3>Handed down, not sold off</h3>
+          <p>The trade passes to the next Davis, along with the customers, the know-how and the habit of answering the phone yourself.</p>
+        </li>
+        <li class="plate dark">
+          <span class="rivet tl"></span><span class="rivet tr"></span><span class="rivet bl"></span><span class="rivet br"></span>
+          <span class="when">Today</span>
+          <h3>Third generation on the job</h3>
+          <p>65+ years in, still family-owned and still local, with the skills for radiant heat and air balancing that most shops won't touch.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What We Do</h2>
+      <p class="lede">Every heating and cooling need, handled professionally, from a quick repair to a full system replacement.</p>
+      <div class="grid">
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-furnace-ac">
+            <img data-photo-query="technician installing furnace residential basement" alt="technician installing furnace residential basement">
+          </figure>
+          <div class="panel-body">
+            <h3>Furnace &amp; Air Conditioning Replacement</h3>
+            <p>Right-sized new equipment, installed with the ductwork in mind, not just dropped in.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-repair">
+            <img data-photo-query="HVAC technician repairing air conditioner unit outdoors" alt="HVAC technician repairing air conditioner unit outdoors">
+          </figure>
+          <div class="panel-body">
+            <h3>HVAC Repair &amp; Maintenance</h3>
+            <p>A real service tech who finds the problem, fixes it, and tells you straight what it needs.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-heat-pump">
+            <img data-photo-query="heat pump unit installed beside house" alt="heat pump unit installed beside house">
+          </figure>
+          <div class="panel-body">
+            <h3>Heat Pump Installation</h3>
+            <p>Efficient heating and cooling from one system, set up for Northwest Indiana seasons.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-radiant">
+            <img data-photo-query="radiant floor heating pipes installation" alt="radiant floor heating pipes installation">
+          </figure>
+          <div class="panel-body">
+            <h3>Radiant Heat Systems</h3>
+            <p>Quiet, even warmth, and the know-how to service the radiant systems in older homes.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-balancing">
+            <img data-photo-query="HVAC technician adjusting ductwork vent" alt="HVAC technician adjusting ductwork vent">
+          </figure>
+          <div class="panel-body">
+            <h3>Air Balancing</h3>
+            <p>Hot upstairs, cold back bedroom? We tune the airflow so every room feels right.</p>
+          </div>
+        </article>
+        <article class="panel">
+          <figure class="photo-slot" data-photo-slot="service-agreements">
+            <img data-photo-query="technician shaking hands with homeowner front door" alt="technician shaking hands with homeowner front door">
+          </figure>
+          <div class="panel-body">
+            <h3>Service Agreements</h3>
+            <p>Regular maintenance from the same family shop, year after year, so small issues stay small.</p>
+          </div>
+        </article>
+      </div>
+      <p class="note"><strong>Residential and light commercial.</strong> From a family home on a quiet street to a small commercial building downtown, we're comfortable on either job.</p>
+    </div>
+  </section>
+
+  <section class="rating" aria-labelledby="rating-title">
+    <div class="wrap">
+      <div class="stars" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.5 5.8 21.2l1.6-7L2 9.5l7.1-.6z"/></svg>
+      </div>
+      <h2 id="rating-title">5 Stars. Every Review.</h2>
+      <p>A perfect 5.0 rating across 4 customer reviews. No dispatch center, no franchise script, just the family that's been doing this since 1959.</p>
+      <a class="btn" href="tel:+12196628635">Call 219-662-8635<small>Schedule service or a free estimate</small></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h2>Davis Heating &amp; Air</h2>
+        <address>
+          Davis Heating and Air Conditioning<br>
+          3038 Sunrise Dr<br>
+          Crown Point, IN 46307
+        </address>
+      </div>
+      <div>
+        <h2>Call the Shop</h2>
+        <p><a class="text-link" href="tel:+12196628635">219-662-8635</a></p>
+        <p>Heating out or AC down? Call, and a Davis will help you sort it out.</p>
+      </div>
+      <div>
+        <h2>Service Area</h2>
+        <ul>
+          <li>Crown Point, Indiana</li>
+          <li>Lake County communities</li>
+          <li>Northwest Indiana</li>
+          <li>Residential &amp; light commercial</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fine-print">
+      <p>&copy; 2026 Davis Heating and Air Conditioning. Family-owned since 1959.</p>
+      <p>Website sample by Wild Card Creative Co</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
